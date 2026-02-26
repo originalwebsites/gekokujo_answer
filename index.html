@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>下剋上数学 模範解答</title><style>
+body{
+  font-family:"Yu Mincho",serif;
+  background:#f4f6f8;
+  margin:0;
+  padding:40px 0;
+}
+.paper{
+  width:900px;
+  margin:auto;
+  background:#fff;
+  padding:40px 60px;
+  box-shadow:0 0 12px rgba(0,0,0,0.15);
+}
+h1{
+  text-align:center;
+  letter-spacing:6px;
+  margin-bottom:40px;
+}
+.section{
+  margin-bottom:35px;
+  padding-bottom:20px;
+  border-bottom:1px solid #ccc;
+}
+.section-title{
+  font-size:20px;
+  margin-bottom:10px;
+}
+button{
+  padding:8px 20px;
+  font-size:15px;
+  cursor:pointer;
+}
+.answer-box{
+  margin-top:15px;
+  display:none;
+}
+.answer-box img{
+  max-width:100%;
+  border:1px solid #aaa;
+}
+.note{
+  color:#666;
+  font-size:14px;
+}
+</style></head><body>
+<div class="paper">
+<h1>模 範 解 答</h1><div class="note">「解答を見る」を押すと表示されます。</div><!-- 大問1 --><div class="section">
+<div class="section-title">大問1</div>
+<button onclick="toggle('a1')">解答を見る</button>
+<div id="a1" class="answer-box">
+<img src="answers/q1.png">
+</div>
+</div><!-- 大問2 --><div class="section">
+<div class="section-title">大問2</div>
+<button onclick="toggle('a2')">解答を見る</button>
+<div id="a2" class="answer-box">
+<img src="answers/q2.png">
+</div>
+</div><!-- 大問3（PDF例） --><div class="section">
+<div class="section-title">大問3</div>
+<button onclick="openPDF('answers/q3.pdf')">PDFで開く</button>
+</div><!-- 大問4 --><div class="section">
+<div class="section-title">大問4</div>
+<button onclick="toggle('a4')">解答を見る</button>
+<div id="a4" class="answer-box">
+<img src="answers/q4.png">
+</div>
+</div><!-- 大問5 --><div class="section">
+<div class="section-title">大問5</div>
+<button onclick="toggle('a5')">解答を見る</button>
+<div id="a5" class="answer-box">
+<img src="answers/q5.png">
+</div>
+</div><!-- 大問6 --><div class="section">
+<div class="section-title">大問6</div>
+<button onclick="openPDF('answers/q6.pdf')">PDFで開く</button>
+</div></div><script>
+function toggle(id){
+  const el=document.getElementById(id);
+  el.style.display=(el.style.display==="block")?"none":"block";
+}
+
+function openPDF(path){
+  window.open(path,"_blank");
+}
+</script></body>
+                          </html>
